@@ -32,8 +32,8 @@ export function Navigation() {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/#contact', onClick: handleContactClick }
+    { name: 'Projects', path: '/projects/' },
+    { name: 'Contact', path: '/#contact/', onClick: handleContactClick }
   ];
 
   return (
