@@ -2,7 +2,7 @@ export const projects = [
     {
       title: "Brussels Dashboard",
       description: "A full-stack dashboard solution with React, Node.js, and MongoDB. Realtime Brussels Data.",
-      image: "./public/BXLogo.png",
+      image: "./BXLogo.png",
       technologies: ["React", "Node.js", "MongoDB", "Express"],
       githubUrl: "https://github.com/MichaelStoikos/prototype1-dashboard",
       liveUrl: "#"
@@ -10,7 +10,7 @@ export const projects = [
     {
       title: "Alien-Themed interactive Website",
       description: "An interactive Alien-themed website using frontend libraries like gsap for the animation with a 3D-environment twist using React-Three-Fiber.",
-      image: "./public/AlienLoading.png",
+      image: "./AlienLoading.png",
       technologies: ["React", "GSAP", "React-Three-Fiber"],
       githubUrl: "https://github.com/MichaelStoikos/prototype2-dynamic-transitions",
       liveUrl: "https://michaelstoikos.github.io/prototype2-dynamic-transitions/"
@@ -26,7 +26,7 @@ export const projects = [
     {
       title: "Movie Library",
       description: "Introduction to NodeJS and Mongodb. Movie library with a built-in CRUD-functionality.",
-      image: "./public/IM_HomeCOV.png",
+      image: "./IM_HomeCOV.png",
       technologies: ["HTML/CSS", "NodeJS", "Mongodb"],
       githubUrl: "https://github.com/EHB-MCT/web2-course-project-front-end-MichaelStoikos",
       liveUrl: "https://ehb-mct.github.io/web2-course-project-front-end-MichaelStoikos/"
