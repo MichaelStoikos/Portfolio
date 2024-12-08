@@ -17,7 +17,7 @@ export function About() {
     {
       icon: <Database className="w-6 h-6" />,
       title: "Database Management",
-      description: "Working with both SQL and NoSQL databases, specifically MongoDB and PostgreSQL."
+      description: "Working with both SQL and NoSQL databases, specifically MongoDB."
     }
   ];
 
