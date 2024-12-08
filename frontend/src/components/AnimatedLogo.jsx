@@ -27,39 +27,45 @@ export function AnimatedLogo() {
       x: 0,
       y: 0,
       duration: 0.3,
-      ease: "power2.out",
-      clearProps: "all"
+      ease: "power2.out"
     });
   };
 
   return (
-    <Link 
-      to="/"
-      className="relative w-12 h-12 flex items-center justify-center"
-      onMouseEnter={playAnimation}
-      onMouseLeave={resetAnimation}
-      ref={containerRef}
-    >
-      <div
-        ref={circle1Ref}
-        className="absolute w-3 h-3 bg-primary rounded-full"
-        style={{ left: '25%', top: '25%' }}
-      />
-      <div
-        ref={circle2Ref}
-        className="absolute w-3 h-3 bg-primary rounded-full"
-        style={{ right: '25%', top: '25%' }}
-      />
-      <div
-        ref={circle3Ref}
-        className="absolute w-3 h-3 bg-primary rounded-full"
-        style={{ left: '25%', bottom: '25%' }}
-      />
-      <div
-        ref={circle4Ref}
-        className="absolute w-3 h-3 bg-primary rounded-full"
-        style={{ right: '25%', bottom: '25%' }}
-      />
-    </Link>
+    <div className='flex flex-row text-slate-50 justify-center items-center'
+    onMouseEnter={playAnimation}
+        onMouseLeave={resetAnimation} >
+            <Link 
+        to="/"
+        className="relative w-12 h-12 flex items-center justify-center"
+        
+        ref={containerRef}
+        >
+        <div
+            ref={circle1Ref}
+            className="absolute w-3 h-3 bg-primary rounded-full"
+            style={{ left: '20%', top: '20%' }}
+        />
+        <div
+            ref={circle2Ref}
+            className="absolute w-3 h-3 bg-primary rounded-full"
+            style={{ right: '20%', top: '20%' }}
+        />
+        <div
+            ref={circle3Ref}
+            className="absolute w-3 h-3 bg-primary rounded-full"
+            style={{ left: '20%', bottom: '20%' }}
+        />
+        <div
+            ref={circle4Ref}
+            className="absolute w-3 h-3 bg-primary rounded-full"
+            style={{ right: '20%', bottom: '20%' }}
+        />
+        </Link>
+        <Link to="/">
+            <h1 className='text-primary text-3xl font-bold'>MY.PROJECTS</h1>
+        </Link>
+    </div>
+    
   );
 }

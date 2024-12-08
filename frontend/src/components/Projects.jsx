@@ -2,35 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github } from 'lucide-react';
-import { Fingerprint } from 'lucide-react';
-
-
-const projects = [
-  {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with React, Node.js, and MongoDB",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "Task Management App",
-    description: "A collaborative task management tool with real-time updates",
-    image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["React", "Firebase", "Tailwind CSS"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "AI Image Generator",
-    description: "An AI-powered image generation tool using DALL-E API",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["React", "OpenAI API", "Node.js"],
-    githubUrl: "#",
-    liveUrl: "#"
-  }
-];
 
 export function Projects() {
   const [ref, inView] = useInView({
@@ -65,7 +36,7 @@ export function Projects() {
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />
-                <Fingerprint></Fingerprint>
+              
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                   <div className="flex gap-4">
                     <a

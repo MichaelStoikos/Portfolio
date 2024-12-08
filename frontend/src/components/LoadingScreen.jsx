@@ -89,19 +89,19 @@ export function LoadingScreen({ onLoadingComplete }) {
       <div className="relative w-32 h-32">
         <div
           ref={circle1Ref}
-          className="absolute w-8 h-8 bg-primary rounded-full left-0 top-0"
+          className="absolute w-12 h-12 bg-primary rounded-full left-0 top-0"
         />
         <div
           ref={circle2Ref}
-          className="absolute w-8 h-8 bg-primary rounded-full right-0 top-0"
+          className="absolute w-12 h-12 bg-primary rounded-full right-0 top-0"
         />
         <div
           ref={circle3Ref}
-          className="absolute w-8 h-8 bg-primary rounded-full left-0 bottom-0"
+          className="absolute w-12 h-12 bg-primary rounded-full left-0 bottom-0"
         />
         <div
           ref={circle4Ref}
-          className="absolute w-8 h-8 bg-primary rounded-full right-0 bottom-0"
+          className="absolute w-12 h-12 bg-primary rounded-full right-0 bottom-0"
         />
       </div>
     </div>

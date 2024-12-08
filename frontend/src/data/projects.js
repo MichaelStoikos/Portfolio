@@ -1,42 +1,34 @@
 export const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, and payment integration.",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-      githubUrl: "#",
+      title: "Brussels Dashboard",
+      description: "A full-stack dashboard solution with React, Node.js, and MongoDB. Realtime Brussels Data.",
+      image: "./public/BXLogo.png",
+      technologies: ["React", "Node.js", "MongoDB", "Express"],
+      githubUrl: "https://github.com/MichaelStoikos/prototype1-dashboard",
       liveUrl: "#"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management tool with real-time updates. Users can create projects, assign tasks, set deadlines, and track progress in real-time.",
-      image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&q=80&w=1000",
-      technologies: ["React", "Firebase", "Tailwind CSS", "Redux"],
-      githubUrl: "#",
-      liveUrl: "#"
+      title: "Alien-Themed interactive Website",
+      description: "An interactive Alien-themed website using frontend libraries like gsap for the animation with a 3D-environment twist using React-Three-Fiber.",
+      image: "./public/AlienLoading.png",
+      technologies: ["React", "GSAP", "React-Three-Fiber"],
+      githubUrl: "https://github.com/MichaelStoikos/prototype2-dynamic-transitions",
+      liveUrl: "https://michaelstoikos.github.io/prototype2-dynamic-transitions/"
     },
     {
-      title: "AI Image Generator",
-      description: "An AI-powered image generation tool using DALL-E API. Users can create unique images from text descriptions and customize various parameters.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000",
-      technologies: ["React", "OpenAI API", "Node.js", "Canvas API"],
-      githubUrl: "#",
-      liveUrl: "#"
+      title: "Infinite Quiz",
+      description: "Website with Infinite questions and an ELO-system. Correct answers give you points, incorrect answers will make you lose more ELO.",
+      image: "https://www.fastory.io/hubfs/Blog/comment-faire-un-quiz-buzzfeed-qui-genere-du-trafic-des-prospects-et-des-ventes-1.jpeg",
+      technologies: ["React", "Mongodb", "NodeJS", "Express"],
+      githubUrl: "https://github.com/MichaelStoikos/prototype4-Quiz",
+      liveUrl: "https://michaelstoikos.github.io/prototype4-Quiz/"
     },
     {
-      title: "Social Media Dashboard",
-      description: "A comprehensive social media management dashboard with analytics, scheduling, and content management features.",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1000",
-      technologies: ["React", "D3.js", "Node.js", "PostgreSQL"],
-      githubUrl: "#",
-      liveUrl: "#"
-    },
-    {
-      title: "Real-time Chat Application",
-      description: "A modern chat application with real-time messaging, file sharing, and video calls using WebRTC.",
-      image: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=1000",
-      technologies: ["React", "Socket.io", "WebRTC", "MongoDB"],
-      githubUrl: "#",
-      liveUrl: "#"
+      title: "Movie Library",
+      description: "Introduction to NodeJS and Mongodb. Movie library with a built-in CRUD-functionality.",
+      image: "./public/IM_HomeCOV.png",
+      technologies: ["HTML/CSS", "NodeJS", "Mongodb"],
+      githubUrl: "https://github.com/EHB-MCT/web2-course-project-front-end-MichaelStoikos",
+      liveUrl: "https://ehb-mct.github.io/web2-course-project-front-end-MichaelStoikos/"
     }
   ];
