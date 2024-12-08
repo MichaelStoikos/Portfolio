@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center relative bg-gradient-to-b from-gray-900 to-gray-800 text-white px-4">
+    <section className="min-h-screen flex flex-col justify-center items-center relative bg-gradient-to-b from-gray-900 to-gray-800 text-white px-4 no-underline">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

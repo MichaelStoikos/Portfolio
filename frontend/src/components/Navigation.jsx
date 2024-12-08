@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import { AnimatedLogo } from './AnimatedLogo';
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,10 +18,22 @@ export function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      if (location.pathname !== '/') {
+        window.location.href = '/#contact';
+      } else {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/#contact' },
+    { name: 'Contact', path: '/#contact', onClick: handleContactClick }
   ];
 
   return (
@@ -33,15 +46,14 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-2xl font-bold text-primary">
-            Portfolio
-          </Link>
+          <AnimatedLogo />
 
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 text-xl">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
+                onClick={item.onClick}
                 className={`text-gray-300 hover:text-primary transition-colors ${
                   location.pathname === item.path ? 'text-primary' : ''
                 }`}
@@ -64,16 +76,19 @@ export function Navigation() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden bg-accent py-4"
+            className="md:hidden bg-secondary py-4"
           >
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className={`block px-4 py-2 text-gray-300 hover:text-primary hover:bg-secondary ${
+                onClick={(e) => {
+                  item.onClick?.(e);
+                  setIsMobileMenuOpen(false);
+                }}
+                className={`block px-4 py-2 text-gray-300 hover:text-primary hover:bg-accent ${
                   location.pathname === item.path ? 'text-primary' : ''
                 }`}
-                onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}
               </Link>
